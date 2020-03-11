@@ -20,7 +20,7 @@ from flask_moment import Moment
 
 app = Flask(__name__)
 moment = Moment(app)
-db = db_setup(app)
+db, migrate = db_setup(app)
 
 
 #----------------------------------------------------------------------------#

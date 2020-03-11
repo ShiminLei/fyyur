@@ -14,7 +14,7 @@ def db_setup(app):
     db.app = app
     db.init_app(app)
     migrate = Migrate(app, db)
-    return db
+    return db, migrate
 
 #----------------------------------------------------------------------------#
 # Models.
