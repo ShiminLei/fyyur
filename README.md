@@ -125,14 +125,14 @@ To start and run the local development server,
   $ source env/bin/activate
   ```
 
-2. Install the dependencies:
+2. Install the dependencie, and link the database in config:
   ```
   $ pip install -r requirements.txt
   ```
 
 3. Run the development server:
   ```
-  $ export FLASK_APP=myapp
+  $ export FLASK_APP=app
   $ export FLASK_ENV=development # enables debug mode
   $ python3 app.py
   ```
