@@ -21,8 +21,6 @@ def db_setup(app):
 #----------------------------------------------------------------------------#
 
 # Venue model
-
-
 class Venue(db.Model):
     __tablename__ = 'Venue'
 
