@@ -125,16 +125,24 @@ To start and run the local development server,
   $ source env/bin/activate
   ```
 
-2. Install the dependencie, and link the database in config:
+2. Install the dependencie:
   ```
   $ pip install -r requirements.txt
   ```
 
-3. Run the development server:
+3. Link the database in config.
+  
+4. Run the development server:
+
   ```
   $ export FLASK_APP=app
   $ export FLASK_ENV=development # enables debug mode
+  
+  $ flask db init
+  $ flask db migrate
+  $ flask db upgrade
+  
   $ python3 app.py
   ```
 
-4. Navigate to Home page [http://localhost:5000](http://localhost:5000)
+5. Navigate to Home page [http://localhost:5000](http://localhost:5000)
